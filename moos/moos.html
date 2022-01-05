@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #background1 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 76%;
+            position: relative;
+        }
+
+        #block {
+            background-color: #46D1C2;
+            position: absolute;
+            top: 2.02020202vw;
+            height: 2.02020202vw;
+            width: 11%;
+        }
+
+        #discover_font {
+            position: absolute;
+            left: 12%;
+            top: 1.7vw;
+            font-size: 2.2vw;
+            font-family: Helvetica Neue;
+            font-weight: 600;
+            color: #32C7B7;
+        }
+
+        #start_font {
+            position: absolute;
+            left: 12%;
+            top: 5.5vw;
+            font-size: 1.83vw;
+            font-family: Helvetica Neue;
+            font-weight: 550;
+            color: #4FD5C6;
+        }
+
+        #a1 {
+            position: absolute;
+            left: 12%;
+            top: 9vw;
+        }
+
+        #a2 {
+            position: absolute;
+            left: 8.5%;
+            top: 11vw;
+        }
+
+        #back {
+            position: absolute;
+            left: 0%;
+            top: 0vw;
+        }
+
+        #background2 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 71%;
+            position: relative;
+        }
+
+        #desk_font {
+            position: absolute;
+            left: 12%;
+            top: 5.5vw;
+            font-size: 1.83vw;
+            font-family: Helvetica Neue;
+            font-weight: 550;
+            color: #4FD5C6;
+        }
+
+        #a3 {
+            position: absolute;
+            left: 12%;
+            top: 9vw;
+        }
+
+        #a4 {
+            position: absolute;
+            left: 12%;
+            top: 37vw;
+        }
+
+        #background3 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 45.5%;
+            position: relative;
+        }
+
+        #summary_font {
+            position: absolute;
+            left: 12%;
+            top: 5.5vw;
+            font-size: 1.83vw;
+            font-family: Helvetica Neue;
+            font-weight: 550;
+            color: #4FD5C6;
+        }
+
+        #a5 {
+            position: absolute;
+            left: 12%;
+            top: 8vw;
+        }
+
+        #a6 {
+            position: absolute;
+            left: 11.75%;
+            top: 11vw;
+        }
+
+        #a7 {
+            position: absolute;
+            left: 12%;
+            top: 33vw;
+        }
+
+        #a8 {
+            position: absolute;
+            left: 54%;
+            top: 19vw;
+        }
+
+        #a9 {
+            position: absolute;
+            left: 54%;
+            top: 25vw;
+        }
+
+        #background4 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 74%;
+            position: relative;
+        }
+
+        #fonts {
+            position: absolute;
+            left: 12%;
+            top: 8vw;
+            font-size: 1.281vw;
+            font-family: HelveticaNeue-Light;
+            font-weight: Light;
+        }
+
+        #b {
+            position: absolute;
+            top: 3vw;
+        }
+
+        #b1 {
+            position: absolute;
+            left: 12%;
+            top: 11vw;
+        }
+
+        #b2 {
+            position: absolute;
+            left: 38%;
+            top: 11vw;
+        }
+
+        #b3 {
+            position: absolute;
+            left: 65%;
+            top: 11vw;
+        }
+
+        #p_font {
+            position: absolute;
+            left: 12%;
+            top: 27vw;
+            font-size: 1.83vw;
+            font-family: Helvetica Neue;
+            font-weight: 550;
+            color: #4FD5C6;
+        }
+
+        #b4 {
+            position: absolute;
+            left: 12%;
+            top: 31vw;
+        }
+
+        #b5 {
+            position: absolute;
+            left: 38.5%;
+            top: 31vw;
+        }
+
+        #b6 {
+            position: absolute;
+            left: 65%;
+            top: 31vw;
+        }
+
+        #b7 {
+            position: absolute;
+            left: 12%;
+            top: 43vw;
+        }
+
+        #background5 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 50%;
+            position: relative;
+        }
+
+        #b8 {
+            position: absolute;
+            left: 11%;
+            top: 20vw;
+        }
+
+        #b9 {
+            position: absolute;
+            left: 52%;
+            top: 11vw;
+        }
+
+        #b10 {
+            position: absolute;
+            left: 53%;
+            top: 25.8vw;
+        }
+
+        #b11 {
+            position: absolute;
+            left: 53%;
+            top: 39vw;
+        }
+
+        #background6 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 48%;
+            position: relative;
+        }
+
+        #c1 {
+            position: absolute;
+            left: 12%;
+            top: 8.3vw;
+        }
+
+        #c2 {
+            position: absolute;
+            left: 12%;
+            top: 10vw;
+        }
+
+        #c3 {
+            position: absolute;
+            left: 12%;
+            top: 12vw;
+        }
+
+        #c4 {
+            position: absolute;
+            left: 12%;
+            top: 40vw;
+        }
+
+        #c5 {
+            position: absolute;
+            left: 25%;
+            top: 40vw;
+        }
+
+        #c6 {
+            position: absolute;
+            left: 38%;
+            top: 40vw;
+        }
+
+        #c7 {
+            position: absolute;
+            left: 51%;
+            top: 40vw;
+        }
+
+        #c8 {
+            position: absolute;
+            left: 64%;
+            top: 40vw;
+        }
+
+        #c9 {
+            position: absolute;
+            left: 77%;
+            top: 40vw;
+        }
+
+        #c10 {
+            position: absolute;
+            left: 77%;
+            top: 42vw;
+        }
+
+        #background7 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 100%;
+            position: relative;
+        }
+
+        #c11 {
+            position: absolute;
+            left: 12%;
+            top: 10vw;
+        }
+
+        #c12 {
+            position: absolute;
+            left: 12%;
+            top: 30vw;
+        }
+
+        #c13 {
+            position: absolute;
+            left: 12%;
+            top: 50vw;
+        }
+
+        #background8 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 74.5%;
+            position: relative;
+        }
+
+        #d1 {
+            position: absolute;
+            left: 55%;
+            top: 8vw;
+        }
+
+        #d2 {
+            position: absolute;
+            left: 55%;
+            top: 20vw;
+        }
+
+        #d3 {
+            position: absolute;
+            left: 55%;
+            top: 33.5vw;
+        }
+
+        #d4 {
+            position: absolute;
+            left: 55%;
+            top: 37vw;
+        }
+
+        #d5 {
+            position: absolute;
+            left: 55%;
+            top: 51vw;
+        }
+
+        #d6 {
+            position: absolute;
+            left: 55%;
+            top: 32vw;
+        }
+
+        #background9 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 57%;
+            position: relative;
+        }
+
+        #d7 {
+            position: absolute;
+            left: 12%;
+            top: 9vw;
+        }
+
+        #d8 {
+            position: absolute;
+            left: 12%;
+            top: 36vw;
+        }
+
+        #d9 {
+            position: absolute;
+            left: 59%;
+            top: 9vw;
+        }
+
+        #d10 {
+            position: absolute;
+            left: 59%;
+            top: 36vw;
+        }
+
+        #background10 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 69%;
+            position: relative;
+        }
+
+        #q {
+            position: absolute;
+            left: 12%;
+            top: 8.7vw;
+        }
+
+        #background11 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 52%;
+            position: relative;
+        }
+
+        #q1 {
+            position: absolute;
+            left: 12%;
+            top: 8.7vw;
+        }
+
+        #q2 {
+            position: absolute;
+            left: 38%;
+            top: 8.7vw;
+        }
+
+        #q3 {
+            position: absolute;
+            left: 64%;
+            top: 8.7vw;
+        }
+
+        #background12 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 100%;
+            position: relative;
+        }
+
+        #w1 {
+            position: absolute;
+            left: 12%;
+            top: 8vw;
+        }
+
+        #w2 {
+            position: absolute;
+            left: 15%;
+            top: 18vw;
+        }
+
+        #w3 {
+            position: absolute;
+            left: 15%;
+            top: 37vw;
+        }
+
+        #w4 {
+            position: absolute;
+            left: 18%;
+            top: 8vw;
+        }
+
+        #w5 {
+            position: absolute;
+            left: 24%;
+            top: 57vw;
+        }
+
+        #qq {
+            position: absolute;
+        }
+
+        #background13 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 100%;
+            position: relative;
+        }
+
+        #z1 {
+            position: absolute;
+            left: 12%;
+            top: 8.3vw;
+        }
+
+        #z2 {
+            position: absolute;
+            left: 12%;
+            top: 11vw;
+        }
+
+        #z3 {
+            position: absolute;
+            left: 14%;
+            top: 24vw;
+        }
+
+        #z4 {
+            position: absolute;
+            left: 13.5%;
+            top: 44vw;
+        }
+
+        #z5 {
+            position: absolute;
+            left: 14.3%;
+            top: 11vw;
+        }
+
+        #z6 {
+            position: absolute;
+            left: 51%;
+            top: 8.3vw;
+        }
+
+        #z7 {
+            position: absolute;
+            left: 51%;
+            top: 35vw;
+        }
+
+        #z8 {
+            position: absolute;
+            left: 12%;
+            top: 55vw;
+        }
+
+        #background14 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 100%;
+            position: relative;
+        }
+
+        #e1 {
+            position: absolute;
+            left: 12%;
+            top: 9vw;
+        }
+
+        #e2 {
+            position: absolute;
+            left: 46%;
+            top: 9vw;
+        }
+
+        #e3 {
+            position: absolute;
+            left: 46%;
+            top: 12vw;
+        }
+
+        #e4 {
+            position: absolute;
+            left: 46%;
+            top: 27vw;
+        }
+
+        #e5 {
+            position: absolute;
+            left: 46%;
+            top: 44vw;
+        }
+
+        #e6 {
+            position: absolute;
+            left: 46%;
+            top: 55vw;
+        }
+
+        #e7 {
+            position: absolute;
+            left: 12%;
+            top: 65vw;
+        }
+
+        #background15 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 100%;
+            position: relative;
+        }
+
+        #background16 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 48%;
+            position: relative;
+        }
+
+        #r1 {
+            position: absolute;
+            left: 12%;
+            top: 9vw;
+        }
+
+        #background17 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 62%;
+            position: relative;
+        }
+
+        #r2 {
+            position: absolute;
+            left: 12%;
+            top: 9vw;
+        }
+
+        #background18 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 40%;
+            position: relative;
+        }
+
+        #v2 {
+            position: absolute;
+            left: 12%;
+            top: 9vw;
+        }
+
+        #v3 {
+            position: absolute;
+            left: 37%;
+            top: 9vw;
+        }
+
+        #v4 {
+            position: absolute;
+            left: 62%;
+            top: 9vw;
+        }
+
+        #v1 {
+            position: absolute;
+            top: 18vw;
+        }
+    </style>
+</head>
+
+<body style="margin: 0;">
+    <div id="background1">
+        <div id="back">
+            <img src="./image/page1/back1.png" style="width:100%">
+        </div>
+        <div id="block"></div>
+        <div id="discover_font">DISCOVER</div>
+        <div id="start_font">Start Point : Growing Public Concern about Masks</div>
+        <div id="a1">
+            <img src="./image/page1/a1.png" style="width:44.1945vw">
+        </div>
+        <div id="a2">
+            <img src="./image/page1/a2.png" style="width:85%">
+        </div>
+    </div>
+
+    <div id="background2">
+        <div id="desk_font">Desk Research : Mask Disposal in China</div>
+        <div id="a3">
+            <img src="./image/page1/a3.png" style="width:83%">
+        </div>
+        <div id="a4">
+            <img src="./image/page1/a4.png" style="width:83%">
+        </div>
+    </div>
+
+    <div id="background3">
+        <div id="start_font">Summary</div>
+        <div id="a5">
+            <img src="./image/page1/a5.png" style="width:33vw">
+        </div>
+        <div id="a6">
+            <img src="./image/page1/a6.png" style="width:34vw">
+        </div>
+        <div id="a7">
+            <img src="./image/page1/a7.png" style="width:33vw">
+        </div>
+        <div id="a8">
+            <img src="./image/page1/a8.png" style="width:17.019vw">
+        </div>
+        <div id="a9">
+            <img src="./image/page1/a9.png" style="width:31.994500000000002vw">
+        </div>
+    </div>
+
+    <div id="background4">
+        <div id="b">
+            <img src="./image/page2/b.png" style="width:45vw">
+        </div>
+        <div id="start_font">Field Research</div>
+        <div id="fonts">I chose Shanghai as the city to be focused on owing to the following aspects.</div>
+        <div id="b1">
+            <img src="./image/page2/b1.png" style="width:22vw">
+        </div>
+        <div id="b2">
+            <img src="./image/page2/b2.png" style="width:22vw">
+        </div>
+        <div id="b3">
+            <img src="./image/page2/b3.png" style="width:22vw">
+        </div>
+        <div id="p_font">Persona-Based Journey Map</div>
+        <div id="b4">
+            <img src="./image/page2/b4.png" style="width:25vw">
+        </div>
+        <div id="b5">
+            <img src="./image/page2/b5.png" style="width:25vw">
+        </div>
+        <div id="b6">
+            <img src="./image/page2/b6.png" style="width:25vw">
+        </div>
+        <div id="b7">
+            <img src="./image/page2/b7.png" style="width:87%">
+        </div>
+    </div>
+
+    <div id="background5">
+        <div id="start_font">Questionnaire</div>
+        <div id="fonts">I designed an online questionnaire to ask people about the awareness, use and disposal of masks.
+        </div>
+        <div id="b8">
+            <img src="./image/page2/b8.png" style="width:40vw">
+        </div>
+        <div id="b9">
+            <img src="./image/page2/b9.png" style="width:35vw">
+        </div>
+        <div id="b10">
+            <img src="./image/page2/b10.png" style="width:35vw">
+        </div>
+        <div id="b11">
+            <img src="./image/page2/b11.png" style="width:35vw">
+        </div>
+    </div>
+
+    <div id="background6">
+        <div id="start_font">Further Research</div>
+        <div id="c1">
+            <img src="./image/page3/c1.png" style="width:26.6875vw">
+        </div>
+        <div id="c2">
+            <img src="./image/page3/c2.png" style="width:28.182vw">
+        </div>
+        <div id="c3">
+            <img src="./image/page3/c3.png" style="width:87%">
+        </div>
+        <div id="c4">
+            <img src="./image/page3/c4.png" style="width:12vw">
+        </div>
+        <div id="c5">
+            <img src="./image/page3/c5.png" style="width:12vw">
+        </div>
+        <div id="c6">
+            <img src="./image/page3/c6.png" style="width:12vw">
+        </div>
+        <div id="c7">
+            <img src="./image/page3/c7.png" style="width:12vw">
+        </div>
+        <div id="c8">
+            <img src="./image/page3/c8.png" style="width:12vw">
+        </div>
+        <div id="c9">
+            <img src="./image/page3/c9.png" style="width:12vw">
+        </div>
+        <div id="c10">
+            <img src="./image/page3/c10.png" style="width:10vw">
+        </div>
+    </div>
+    <!-- 
+    <div id="background7">
+        <div id="back">
+            <img src="./image/page3/bj.png" style="width:56vw">
+        </div>
+        <div id="block"></div>
+        <div id="discover_font">DEFINE</div>
+        <div id="start_font">Insight</div>
+        <div id="c11">
+            <img src="./image/page3/c11.png" style="width:32vw;filter: opacity(50%);">
+        </div>
+        <div id="c12">
+            <img src="./image/page3/c12.png" style="width:32vw">
+        </div>
+        <div id="c13">
+            <img src="./image/page3/c13.png" style="width:32vw">
+        </div>
+    </div> -->
+
+    <div id="background8">
+        <div id="back">
+            <img src="./image/page4/d.png" style="width:50vw">
+        </div>
+        <div id="block"></div>
+        <div id="discover_font">DEVELOP</div>
+        <div id="start_font">Ideation</div>
+        <div id="start_font" style="left:55vw">Reference</div>
+        <div id="d1">
+            <img src="./image/page4/d1.png" style="width:33vw">
+        </div>
+        <div id="d2">
+            <img src="./image/page4/d2.png" style="width:33vw">
+        </div>
+        <div id="d3">
+            <img src="./image/page4/d3.png" style="width:33vw">
+        </div>
+        <div id="d4">
+            <img src="./image/page4/d4.png" style="width:33vw">
+        </div>
+        <div id="d5">
+            <img src="./image/page4/d5.png" style="width:33vw">
+        </div>
+        <div id="d6">
+            <img src="./image/page4/d6.png" style="width:33vw">
+        </div>
+    </div>
+
+    <div id="background9">
+        <div id="start_font">Case Study</div>
+        <div id="d7">
+            <img src="./image/page4/d7.png" style="width:43vw">
+        </div>
+        <div id="d8">
+            <img src="./image/page4/d8.png" style="width:44.557vw">
+        </div>
+        <div id="d9">
+            <img src="./image/page4/d9.png" style="width:29.777vw">
+        </div>
+        <div id="d10">
+            <img src="./image/page4/d10.png" style="width:29.777vw">
+        </div>
+    </div>
+
+    <div id="background10">
+        <div id="start_font">Design Theory of Hook Model</div>
+        <div id="q">
+            <img src="./image/page5/q.png" style="width:85%">
+        </div>
+    </div>
+
+    <div id="background11">
+        <div id="start_font">Habit & Behavior Conversion Testing Based on Hook Model</div>
+        <div id="q1">
+            <img src="./image/page5/q1.png" style="width:24vw">
+        </div>
+        <div id="q2">
+            <img src="./image/page5/q2.png" style="width:24vw">
+        </div>
+        <div id="q3">
+            <img src="./image/page5/q3.png" style="width:24vw">
+        </div>
+    </div>
+
+    <div id="background12">
+        <div id="qq">
+            <img src="./image/page6/qq.png" style="width:100%">
+        </div>
+        <div id="block"></div>
+        <div id="discover_font">DELIVER</div>
+        <div id="start_font">Final Concept</div>
+        <div id="w1">
+            <img src="./image/page6/w1.png" style="width:40.077vw">
+        </div>
+        <div id="w2">
+            <img src="./image/page6/w2.png" style="width:28vw">
+        </div>
+        <div id="w3">
+            <img src="./image/page6/w3.png" style="width:28vw">
+        </div>
+        <div id="w4">
+            <img src="./image/page6/w4.png" style="width:90vw">
+        </div>
+        <div id="w5" align=center>
+            <img src="./image/page6/w5.png" style="width:50vw">
+        </div>
+    </div>
+
+    <div id="background13">
+        <div id="start_font">Offline Equipment Design</div>
+        <div id="z1">
+            <img src="./image/page7/z1.png" style="width:5.368vw">
+        </div>
+        <div id="z5">
+            <img src="./image/page7/z5.png" style="width:29vw">
+        </div>
+        <div id="z2">
+            <img src="./image/page7/z2.png" style="width:33.184vw">
+        </div>
+        <div id="z3">
+            <img src="./image/page7/z3.png" style="width:34%">
+        </div>
+        <div id="z4">
+            <img src="./image/page7/z4.png" style="width:30.5915vw">
+        </div>
+        <div id="z6">
+            <img src="./image/page7/z6.png" style="width:31.5065vw">
+        </div>
+        <div id="z7">
+            <img src="./image/page7/z7.png" style="width:31.72vw">
+        </div>
+        <!-- <div id="z8">
+            <img src="./image/page7/z8.png" style="width:70vw">
+        </div> -->
+    </div>
+
+    <div id="background14">
+        <div id="start_font">Online User Interface Design</div>
+        <div id="e1">
+            <img src="./image/page8/e1.png" style="width:29.768vw">
+        </div>
+        <div id="e2">
+            <img src="./image/page8/e2.png" style="width:11.1325vw">
+        </div>
+        <div id="e3">
+            <img src="./image/page8/e3.png" style="width:38.338vw">
+        </div>
+        <div id="e4">
+            <img src="./image/page8/e4.png" style="width:38.338vw">
+        </div>
+        <div id="e5">
+            <img src="./image/page8/e5.png" style="width:38.247vw">
+        </div>
+        <div id="e6">
+            <img src="./image/page8/e6.png" style="width:38.338vw">
+        </div>
+        <!-- <div id="e7">
+            <img src="./image/page8/e7.png" style="width:73vw">
+        </div> -->
+    </div>
+
+    <div id="background15">
+    </div>
+
+    <div id="background16">
+        <div id="start_font">Service Blueprint</div>
+        <div id="r1">
+            <img src="./image/page10/r1.png" style="width:72vw">
+        </div>
+    </div>
+
+    <div id="background17">
+        <div id="start_font">Business Canvas</div>
+        <div id="r2">
+            <img src="./image/page10/r2.png" style="width:71vw">
+        </div>
+    </div>
+
+    <div id="background18">
+        <div id="start_font">Future Prospects</div>
+        <div id="v2">
+            <img src="./image/page11/v2.png" style="width:22vw">
+        </div>
+        <div id="v3">
+            <img src="./image/page11/v3.png" style="width:22vw">
+        </div>
+        <div id="v4">
+            <img src="./image/page11/v4.png" style="width:22vw">
+        </div>
+        <div id="v1">
+            <img src="./image/page11/v1.png" style="width:100%">
+        </div>
+    </div>
+
+</body>
+
+</html>
