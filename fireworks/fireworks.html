@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #background1 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 53%;
+            position: relative;
+        }
+
+        #block {
+            background-color: #4F52CC;
+            position: absolute;
+            top: 2.02020202vw;
+            height: 2.02020202vw;
+            width: 2.02020202vw;
+            left: 12vw;
+        }
+
+        #font {
+            position: absolute;
+            left: 15%;
+            top: 1.7vw;
+            font-size: 2.2vw;
+            font-family: Helvetica Neue;
+            font-weight: 600;
+            color: #4F52CC;
+        }
+
+        #font1 {
+            position: absolute;
+            left: 15%;
+            top: 5.5vw;
+            font-size: 1.83vw;
+            font-family: Helvetica Neue;
+            font-weight: 550;
+            color: #4F52CC;
+        }
+
+        #fonts {
+            position: absolute;
+            left: 15%;
+            top: 17vw;
+            font-size: 1.281vw;
+            font-family: HelveticaNeue-Light;
+            font-weight: Light;
+            width: 28vw;
+            text-align: justify;
+            color: #4F52CC;
+        }
+
+        #fonts1 {
+            position: absolute;
+            left: 15%;
+            top: 28vw;
+            font-size: 1.281vw;
+            font-family: HelveticaNeue-Light;
+            font-weight: Light;
+            width:28vw;
+            text-align: justify;
+            color: #4F52CC;
+        }
+
+        #back {
+            position: absolute;
+            left: 50%;
+            top: 0vw;
+        }
+
+        #a1 {
+            position: absolute;
+            left: 71%;
+            top: 5vw;
+        }
+
+        #a2 {
+            position: absolute;
+            left: 71%;
+            top: 20vw;
+        }
+
+        #a3 {
+            position: absolute;
+            left: 71%;
+            top: 35vw;
+        }
+
+        #background2 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 55%;
+            position: relative;
+        }
+
+        #a4 {
+            position: absolute;
+            left: 15%;
+            top: 8vw;
+        }
+
+        #a5 {
+            position: absolute;
+            left: 15%;
+            top: 10vw;
+        }
+
+        #background3 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 36%;
+            position: relative;
+        }
+
+        #font2 {
+            position: absolute;
+            left: 15%;
+            top: 5.5vw;
+            font-size: 1.281vw;
+            font-family: Helvetica Neue;
+            font-weight: 550;
+        }
+
+        #a6 {
+            position: absolute;
+            left: 15%;
+            top: 8vw;
+        }
+
+        #a7 {
+            position: absolute;
+            left: 15%;
+            top: 18vw;
+        }
+
+        #a8 {
+            position: absolute;
+            left: 15%;
+            top: 28vw;
+        }
+
+        #a9 {
+            position: absolute;
+            left: 49%;
+            top: 19vw;
+        }
+
+        #background4 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 30%;
+            position: relative;
+        }
+
+        #b1 {
+            position: absolute;
+            left: 15%;
+            top: 5vw;
+        }
+
+        #b2 {
+            position: absolute;
+            left: 15%;
+            top: 7.4vw;
+        }
+
+        #b3 {
+            position: absolute;
+            left: 14%;
+            top: 10vw;
+        }
+
+        #b4 {
+            position: absolute;
+            left: 50.5%;
+            top: 7.4vw;
+        }
+
+        #background5 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 64%;
+            position: relative;
+        }
+
+        #b5 {
+            position: absolute;
+            left: 15%;
+            top: 10vw;
+        }
+
+        #b6 {
+            position: absolute;
+            left: 15%;
+            top: 45vw;
+        }
+
+        #background6 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 25%;
+            position: relative;
+        }
+
+        #b {
+            position: absolute;
+        }
+
+        #block1 {
+            background-color: #FFFFFF;
+            position: absolute;
+            top: 2.02020202vw;
+            height: 2.02020202vw;
+            width: 2.02020202vw;
+            left: 12vw;
+        }
+
+        #font4 {
+            position: absolute;
+            left: 15%;
+            top: 1.7vw;
+            font-size: 2.2vw;
+            font-family: Helvetica Neue;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+
+        #font3 {
+            position: absolute;
+            left: 15%;
+            top: 5.5vw;
+            font-size: 1.83vw;
+            font-family: Helvetica Neue;
+            font-weight: 550;
+            color: #FFFFFF;
+        }
+
+        #b7 {
+            position: absolute;
+            left: 15%;
+            top: 12vw;
+        }
+
+        #b8 {
+            position: absolute;
+            left: 39%;
+            top: 12.5vw;
+        }
+
+        #b9 {
+            position: absolute;
+            left: 63%;
+            top: 12.5vw;
+        }
+
+        #background7 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 43%;
+            position: relative;
+        }
+
+
+        #c1 {
+            position: absolute;
+            left: 15%;
+            top: 9vw;
+        }
+
+        #c2 {
+            position: absolute;
+            left: 33%;
+            top: 9vw;
+        }
+
+        #c3 {
+            position: absolute;
+            left: 15%;
+            top: 21vw;
+        }
+
+        #c4 {
+            position: absolute;
+            left: 33%;
+            top: 21vw;
+        }
+
+        #c5 {
+            position: absolute;
+            left: 15%;
+            top: 33vw;
+        }
+
+        #c6 {
+            position: absolute;
+            left: 33%;
+            top: 33vw;
+        }
+
+        #c7 {
+            position: absolute;
+            left: 54%;
+            top: 21vw;
+        }
+
+        #background8 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 60%;
+            position: relative;
+        }
+
+        #fonts0 {
+            position: absolute;
+            left: 15%;
+            top: 7.5vw;
+            font-size: 1.281vw;
+            font-family: HelveticaNeue-Light;
+            font-weight: Light;
+        }
+
+        #c8 {
+            position: absolute;
+            left: 15%;
+            top: 10vw;
+        }
+
+        #c9 {
+            position: absolute;
+            left: 14%;
+            top: 41vw;
+        }
+
+        #fonts01 {
+            position: absolute;
+            left: 54%;
+            top: 7.5vw;
+            font-size: 1.281vw;
+            font-family: HelveticaNeue-Light;
+            font-weight: Light;
+            width: 31vw;
+            text-align: justify;
+        }
+
+        #font02 {
+            position: absolute;
+            left: 54%;
+            top: 5.5vw;
+            font-size: 1.281vw;
+            font-family: Helvetica Neue;
+            font-weight: 550;
+        }
+
+        #c10 {
+            position: absolute;
+            left: 54%;
+            top: 11vw;
+        }
+
+        #c11 {
+            position: absolute;
+            left: 53%;
+            top: 42.5vw;
+        }
+
+        #c12 {
+            position: absolute;
+            left: 74%;
+            top: 42.5vw;
+        }
+
+        #background9{
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 61%;
+            position: relative;
+        }
+
+        #c14 {
+            position: absolute;
+            left: 32%;
+            top: 11vw;
+        }
+
+        #c15 {
+            position: absolute;
+            left: 74%;
+            top: 42.5vw;
+        }
+
+        #font6 {
+            position: absolute;
+            left: 29%;
+            top: 40vw;
+            font-size: 1.83vw;
+            font-family: Helvetica Neue;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+
+        #c16 {
+            position: absolute;
+            left: 15%;
+            top: 45vw;
+        }
+
+        #c17 {
+            position: absolute;
+            left: 35%;
+            top: 45vw;
+        }
+
+        #c18 {
+            position: absolute;
+            left: 55%;
+            top: 45vw;
+        }
+
+        #c19 {
+            position: absolute;
+            left: 75%;
+            top: 45vw;
+        }
+
+        #background10{
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 60%;
+            position: relative;
+        }
+
+        #font11 {
+            position: absolute;
+            left: 50%;
+            top: 5.5vw;
+            font-size: 1.83vw;
+            font-family: Helvetica Neue;
+            font-weight: 550;
+            color: #4F52CC;
+        }
+
+        #d1 {
+            position: absolute;
+            left: 15%;
+            top: 14vw;
+        }
+
+        #d2 {
+            position: absolute;
+            left: 15%;
+            top: 40.5vw;
+        }
+
+        #d3 {
+            position: absolute;
+            left: 50%;
+            top: 10vw;
+        }
+
+        #background11{
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 60%;
+            position: relative;
+        }
+
+        #d4 {
+            position: absolute;
+            left: 15%;
+            top: 9vw;
+        }
+
+        #background12{
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 100%;
+            position: relative;
+            background: url('./image/page5/e.png');
+        }
+
+        #e1 {
+            position: absolute;
+            left: 20%;
+            top: 8vw;
+        }
+
+        #e2 {
+            position: absolute;
+            left: 15%;
+            top: 63vw;
+        }
+
+        #background13{
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 60%;
+            position: relative;
+            background: url('./image/page5/e.png');
+        }
+
+        #e3 {
+            position: absolute;
+            left: 20%;
+            top: 9vw;
+        }
+
+        #background14{
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 78%;
+            position: relative;
+            background: url('./image/page5/e.png');
+        }
+
+        #e4 {
+            position: absolute;
+            left: 20%;
+            top: 10vw;
+        }
+
+        #e5 {
+            position: absolute;
+            left: 20%;
+            top: 26vw;
+        }
+
+        #e6 {
+            position: absolute;
+            left: 20%;
+            top: 42vw;
+        }
+</style>
+</head>
+<body style="margin: 0;">
+    <div id="background1">
+        <div id="back">
+            <img src="./image/page1/a.png" style="width:100%">
+        </div>
+        <div id="block"></div>
+        <div id="font">Discover</div>
+        <div id="font1">Background</div>
+        <div id="fonts">Shanghai Science and Technology Museum was built by Shanghai government to implement the strategy of <p style="display: inline;font-weight: 600">rejuvenating China through science and education</p>, and opened to the public in 2001.</div>
+        <div id="fonts1">It is about to receive its first major closure in 20 years. Its <p style="display: inline;font-weight: 600">2 primary problems and demands</p> need to be solved urgently.</div>
+        <div id="a1">
+            <img src="./image/page1/a1.png" style="width:8vw">
+        </div>
+        <div id="a2">
+            <img src="./image/page1/a2.png" style="width:8vw">
+        </div>
+        <div id="a3">
+            <img src="./image/page1/a3.png" style="width:8vw">
+        </div>
+    </div>
+
+    <div id="background2">
+        <div id="font1">Research</div>
+        <div id="a4">
+            <img src="./image/page1/a4.png" style="width:31.4455vw">
+        </div>
+        <div id="a5">
+            <img src="./image/page1/a5.png" style="width:92%">
+        </div>
+    </div>
+
+    <div id="background3">
+        <div id="font2">Persona</div>
+        <div id="a6">
+            <img src="./image/page1/a6.png" style="width:33vw">
+        </div>
+        <div id="a7">
+            <img src="./image/page1/a7.png" style="width:33vw">
+        </div>
+        <div id="a8">
+            <img src="./image/page1/a8.png" style="width:33vw">
+        </div>
+        <div id="a9">
+            <img src="./image/page1/a9.png" style="width:37vw">
+        </div>
+    </div>
+
+    <div id="background4">
+        <div id="b1">
+            <img src="./image/page2/b1.png" style="width:33vw">
+        </div>
+        <div id="b2">
+            <img src="./image/page2/b3.png" style="width:33vw">
+        </div>
+        <div id="b3">
+            <img src="./image/page2/b2.png" style="width:33vw">
+        </div>
+        <div id="b4">
+            <img src="./image/page2/b4.png" style="width:35vw">
+        </div>
+    </div>
+
+    <div id="background5">
+        <!-- <div id="font2">Journey Map</div> -->
+        <div id="b5">
+            <img src="./image/page2/b5.png" style="width:83%">
+        </div>
+        <div id="b6">
+            <img src="./image/page2/b6.png" style="width:83%">
+        </div>
+    </div>
+
+    <div id="background6">
+        <div id="b">
+            <img src="./image/page2/b.png" style="width:100%">
+        </div>
+        <div id="block1"></div>
+        <div id="font4">DEFINE</div>
+        <div id="font3">Insight</div>
+        <div id="b7">
+            <img src="./image/page2/b7.png" style="width:22vw">
+        </div>
+        <div id="b8">
+            <img src="./image/page2/b8.png" style="width:22vw">
+        </div>
+        <div id="b9">
+            <img src="./image/page2/b9.png" style="width:22vw">
+        </div>
+    </div>
+
+    <div id="background7">
+        <div id="font1">Co-Create Workshop</div>
+        <div id="c1">
+            <img src="./image/page3/c1.png" style="width:17vw">
+        </div>
+        <div id="c2">
+            <img src="./image/page3/c2.png" style="width:17vw">
+        </div>
+        <div id="c3">
+            <img src="./image/page3/c3.png" style="width:17vw">
+        </div>
+        <div id="c4">
+            <img src="./image/page3/c4.png" style="width:17vw">
+        </div>
+        <div id="c5">
+            <img src="./image/page3/c5.png" style="width:17vw">
+        </div>
+        <div id="c6">
+            <img src="./image/page3/c6.png" style="width:17vw">
+        </div>
+        <div id="c7">
+            <img src="./image/page3/c7.png" style="width:31vw">
+        </div>
+    </div>
+
+    <div id="background8">
+        <div id="font2">OPPORTUNITY</div>
+        <div id="fonts0">We used the KJ method to induce design opportunity points.</div>
+        <div id="c8">
+            <img src="./image/page3/c8.png" style="width:32vw">
+        </div>
+        <div id="c9">
+            <img src="./image/page3/c9.png" style="width:34vw">
+        </div>
+        <div id="font02">STAKEHOLDER MAP</div>
+        <div id="fonts01">We sorted out the stakeholders involved in the design concept of combining a virtual visit to help enhance the audience experience and connection SSTM.</div>
+        <div id="c10">
+            <img src="./image/page3/c10.png" style="width:31vw">
+        </div>
+        <div id="c11">
+            <img src="./image/page3/c11.png" style="height:7vw">
+        </div>
+        <div id="c12">
+            <img src="./image/page3/c12.png" style="height:7vw">
+        </div>
+    </div>
+
+    <div id="background9">
+        <div id="c13">
+            <img src="./image/page3/c13.png" style="width:100%">
+        </div>
+        <div id="block1"></div>
+        <div id="font4">DESIGN</div>
+        <div id="font3">Concept</div>
+        <div id="c14">
+            <img src="./image/page3/c14.png" style="width:38.674vw">
+        </div>
+        <div id="font6">AR-BASED SERVICE DESIGN FOR VISITING SSTM</div>
+        <div id="c16">
+            <img src="./image/page3/c16.png" style="height:8vw">
+        </div>
+        <div id="c17">
+            <img src="./image/page3/c17.png" style="height:8vw">
+        </div>
+        <div id="c18">
+            <img src="./image/page3/c18.png" style="height:8vw">
+        </div>
+        <div id="c19">
+            <img src="./image/page3/c19.png" style="height:8vw">
+        </div>
+    </div>
+
+    <div id="background10">
+        <div id="font1">Interaction Logic</div>
+        <div id="font11">User Flow</div>
+        <div id="d1">
+            <img src="./image/page4/d1.png" style="width:28vw">
+        </div>
+        <div id="d2">
+            <img src="./image/page4/d2.png" style="width:28vw">
+        </div>
+        <div id="d3">
+            <img src="./image/page4/d3.png" style="width:35vw">
+        </div>
+    </div>
+
+    <div id="background11">
+        <div id="font1">Service blueprint</div>
+        <div id="d4">
+            <img src="./image/page4/d4.png" style="width:71vw">
+        </div>
+    </div>
+
+    <div id="background12">
+        <div id="font3">Fireworks Experiment Display</div>
+        <div id="e1">
+            <img src="./image/page5/e1.png" style="width:60vw">
+        </div>
+        <div id="e2">
+            <img src="./image/page5/e2.png" style="width:60vw">
+        </div>
+    </div>
+
+    <div id="background13">
+        <div id="font3">Storyboard</div>
+        <div id="e3">
+            <img src="./image/page5/e3.png" style="width:60vw">
+        </div>
+    </div>
+
+    <div id="background14">
+        <div id="font3">Usage Scenario</div>
+        <div id="e4">
+            <img src="./image/page5/e4.png" style="width:60vw">
+        </div>
+        <div id="e5">
+            <img src="./image/page5/e5.png" style="width:60vw">
+        </div>
+        <div id="e6">
+            <img src="./image/page5/e6.png" style="width:60vw">
+        </div>
+    </div>
+</body>
+</html>
