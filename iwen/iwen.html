@@ -247,7 +247,8 @@
             width: 100%;
             height: 0;
             padding: 0;
-            padding-bottom: 41.573519%;
+            /* padding-bottom: 41.573519%; */
+            padding-bottom: 57%;
             position: relative;
             background: url('./image/page3/di.png') repeat;
             background-size: 100% auto;
@@ -280,11 +281,17 @@
             left: 13%;
             top: 25vw;
         }
+
+        #pageUl {
+            position: fixed;
+            right: 10px;
+        }
     </style>
 </head>
 
 <body style="margin: 0;">
     <div id="background1">
+        <div id="page0" class="page"></div>
         <div id="bk_font">
             Background
         </div>
@@ -297,6 +304,7 @@
     </div>
 
     <div id="background2">
+        <div id="page1" class="page"></div>
         <div id="persona_font">
             Persona
         </div>
@@ -309,6 +317,7 @@
     </div>
 
     <div id="background3">
+        <div id="page2" class="page"></div>
         <div id="insights_font">
             Insights
         </div>
@@ -321,6 +330,7 @@
     </div>
 
     <div id="background4">
+        <div id="page3" class="page"></div>
         <div id="inform_font">
             Information Architecture
         </div>
@@ -335,6 +345,7 @@
     </div>
 
     <div id="background5">
+        <div id="page4" class="page"></div>
         <div id="core_font">
             Core Functions
         </div>
@@ -353,6 +364,7 @@
     </div>
 
     <div id="background6">
+        <div id="page5" class="page"></div>
         <div id="wire_font">
             Wireframe & Flow
         </div>
@@ -365,6 +377,7 @@
     </div>
 
     <div id="background7">
+        <div id="page6" class="page"></div>
         <div id="user_font">
             User interface Design
         </div>
@@ -374,6 +387,7 @@
     </div>
 
     <div id="background8">
+        <div id="page7" class="page"></div>
         <div id="user_font">
             Design Code
         </div>
@@ -387,6 +401,125 @@
             <img src="./image/page4/icon.png" style="width:38vw">
         </div>
     </div>
+
+    <ul id="pageUl" type="radio">
+        <li id="pageUlLi0" class="pageUlLi" style="color: #6B81FD">&nbsp;</li>
+        <li id="pageUlLi1" class="pageUlLi" style="color: #d8d8d8">&nbsp;</li>
+        <li id="pageUlLi2" class="pageUlLi" style="color: #d8d8d8">&nbsp;</li>
+        <li id="pageUlLi3" class="pageUlLi" style="color: #d8d8d8">&nbsp;</li>
+        <li id="pageUlLi4" class="pageUlLi" style="color: #d8d8d8">&nbsp;</li>
+        <li id="pageUlLi5" class="pageUlLi" style="color: #d8d8d8">&nbsp;</li>
+        <li id="pageUlLi6" class="pageUlLi" style="color: #d8d8d8">&nbsp;</li>
+        <li id="pageUlLi7" class="pageUlLi" style="color: #d8d8d8">&nbsp;</li>
+    </ul>
+
+    <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+
+    <script>
+        window.onload = resizeImages;
+        window.onresize = resizeImages;
+        var dis = [];
+
+        function resizeImages() {
+            $(function (e) {
+                var screenHeight = document.documentElement.clientHeight;
+                $("#pageUl").css("bottom", screenHeight >> 1);
+
+                var obj = document.getElementsByClassName("page");
+                dis = [0];
+                var temp = obj[0].getBoundingClientRect().top
+                for (var i = 1; i < obj.length; i++) {
+                    dis.push(obj[i].getBoundingClientRect().top - temp);
+                }
+            });
+        }
+
+        $(function () {
+            $(window).scroll(function () {
+                var height = $(window).scrollTop();
+                if (height < dis[1] - 1) {
+                    $(".pageUlLi").css("color", "#d8d8d8");
+                    $("#pageUlLi" + 0).css("color", "#6B81FD");
+                } else if (height < dis[2] - 1) {
+                    $(".pageUlLi").css("color", "#d8d8d8");
+                    $("#pageUlLi" + 1).css("color", "#6B81FD");
+                } else if (height < dis[3] - 1) {
+                    $(".pageUlLi").css("color", "#d8d8d8");
+                    $("#pageUlLi" + 2).css("color", "#6B81FD");
+                } else if (height < dis[4] - 1) {
+                    $(".pageUlLi").css("color", "#d8d8d8");
+                    $("#pageUlLi" + 3).css("color", "#6B81FD");
+                } else if (height < dis[5] - 1) {
+                    $(".pageUlLi").css("color", "#d8d8d8");
+                    $("#pageUlLi" + 4).css("color", "#6B81FD");
+                } else if (height < dis[6] - 1) {
+                    $(".pageUlLi").css("color", "#d8d8d8");
+                    $("#pageUlLi" + 5).css("color", "#6B81FD");
+                } else if (height < dis[7] - 1) {
+                    $(".pageUlLi").css("color", "#d8d8d8");
+                    $("#pageUlLi" + 6).css("color", "#6B81FD");
+                } else {
+                    $(".pageUlLi").css("color", "#d8d8d8");
+                    $("#pageUlLi" + 7).css("color", "#6B81FD");
+                }
+
+
+            });
+        });
+
+        function BinarySearchFirstBig(arr, target) {
+            if (arr.length <= 1) return -1
+            // 低位下标
+            let lowIndex = 0
+            // 高位下标
+            let highIndex = arr.length - 1
+
+            while (lowIndex <= highIndex) {
+                // 中间下标
+                const midIndex = Math.floor((lowIndex + highIndex) / 2)
+                if (arr[midIndex] >= target) {
+                    // 如果 midIndex 为0或者前一个数小于 target 那么找到第一个大于等于给定值的元素，直接返回
+                    if (midIndex === 0 || arr[midIndex - 1] < target) return midIndex
+                    // 否则高位下标为中位下标减1
+                    highIndex = midIndex - 1
+                } else {
+                    lowIndex = midIndex + 1
+                }
+            }
+            return -1
+        }
+
+        function toPage(index) {
+            $("html,body").animate({
+                scrollTop: $("#page" + index).eq(0).offset().top
+            }, 500);
+        }
+
+        document.getElementById("pageUlLi0").onmouseover = function () {
+            toPage(0);
+        }
+        document.getElementById("pageUlLi1").onmouseover = function () {
+            toPage(1);
+        }
+        document.getElementById("pageUlLi2").onmouseover = function () {
+            toPage(2);
+        }
+        document.getElementById("pageUlLi3").onmouseover = function () {
+            toPage(3);
+        }
+        document.getElementById("pageUlLi4").onmouseover = function () {
+            toPage(4);
+        }
+        document.getElementById("pageUlLi5").onmouseover = function () {
+            toPage(5);
+        }
+        document.getElementById("pageUlLi6").onmouseover = function () {
+            toPage(6);
+        }
+        document.getElementById("pageUlLi7").onmouseover = function () {
+            toPage(7);
+        }
+    </script>
 </body>
 
 </html>
